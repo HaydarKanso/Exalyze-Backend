@@ -1,4 +1,4 @@
-age 1: Build the application using Maven
+
 FROM maven:3.9.6-eclipse-temurin-17 AS build
 
 # Set working directory inside container
@@ -27,3 +27,4 @@ EXPOSE 8080
 
 # Start the Spring Boot application
 ENTRYPOINT ["java", "-jar", "app.jar"]
+
